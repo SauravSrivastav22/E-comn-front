@@ -143,10 +143,12 @@
                             required>
                         <label class="custom-control-label" for="credit">Credit card</label>
                     </div>
+                    <br>
                     <div class="custom-control custom-radio">
                         <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
                         <label class="custom-control-label" for="debit">Debit card</label>
                     </div>
+                    <br>
                     <div class="custom-control custom-radio">
                         <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
                         <label class="custom-control-label" for="paypal">Paypal</label>
@@ -186,7 +188,7 @@
                     </div>
                 </div>
                 <hr class="mb-4">
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+                <button class="btn btn-primary btn-lg btn-block" type="submit" routerLink="/thankyou">Continue to checkout</button>
             </form>
         </div>
     </div>

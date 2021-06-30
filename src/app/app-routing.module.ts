@@ -12,6 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { ThankyouComponent } from './components/thankyou/thankyou.component';
 
 const routes: Routes = [
   {
@@ -44,14 +45,17 @@ const routes: Routes = [
     path:"user-profile" , component:UserProfileComponent , canActivate:[AuthGuardGuard]
   },
   {
+    path:"contactus" , component:ContactUsComponent
+  },
+  {
+    path:"thankyou" , component:ThankyouComponent , canActivate:[AuthGuardGuard]
+  },
+  {
     path:"order-summary" , component:SummaryComponent , canActivate:[AuthGuardGuard]
   },
   {
     path:"**" , redirectTo:""
   },
-  {
-    path:"app-contact-us" , component:ContactUsComponent 
-  }
 ];
 
 @NgModule({

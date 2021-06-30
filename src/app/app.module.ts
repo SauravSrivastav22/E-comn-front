@@ -20,6 +20,9 @@ import { AddressComponent } from './components/address/address.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { ThankyouComponent } from './components/thankyou/thankyou.component';
+
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     AddressComponent,
     UserProfileComponent,
     SummaryComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ThankyouComponent
   ],
   imports: [
     BrowserModule,

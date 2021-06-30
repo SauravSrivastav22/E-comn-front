@@ -224,6 +224,10 @@ export class ProductsService {
     return this._http.post<any>(`http://localhost:3000/api/address/${userId}` , userData);
   }
 
+  postcontactus(userId:any , userData:any){
+    return this._http.post<any>(`http://localhost:3000/api/contactus/${userId}` , userData);
+  }
+
   // checkAddress(){
   //   return this._http.get()
   // }
